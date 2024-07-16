@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+body{
+    color: #333;
+}
+
+#wrap{
+    margin: 0 auto;
+    width: 1200px;
+    position: relative; /* sub_bg */
+}
+
+
+#header{
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    /* height: 50px; */
+    /* border:  1px solid rebeccapurple; */
+}
+
+.nav{
+    align-self: self-end;
+    /* 스스로의 위아래 기준선 맞추기 */
+}
+
+.main{
+    background-color: #fff;
+}
+
+.main>li{
+    display: inline-block;
+    position: relative;
+}
+
+.main>li>a{
+    color: seagreen;
+    display: block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    /* color: #eee; */
+}
+
+.main>li:hover>a{
+    background-color: seagreen;
+    color: #fff;
+}
+
+.sub{
+        color: #7e7e7e;
+        position: absolute;
+        top: 50px; left: 0;
+        width: 100%;
+        z-index: 10;
+        display: none;
+    }
+    .sub li{
+    
+    }
+    .sub>li>a{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: rgb(255, 247, 236);
+    }
+    .sub>li>a:hover{
+        background-color: #b8d3be;
+        color: seagreen;
+    }
+    
+    
+    .sub_bg{
+        position: absolute;
+        top: 100px; left: 0;
+        background-color: rgb(255, 247, 236);
+        width: 100%;
+        height: 130px;
+        z-index: 9;
+        display: none;
+    }
+    
+
+
+
+
+
+
+
+#section{
+    height: 500px;
+    background-color: #bacfbb;
+    
+}
+
+.slide_img{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left_move{
+    width: calc(1200px * 3);
+    position: absolute;
+    left: 0; top: 0;
+}
+.left_move li{
+    float: left;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-between;
+}
+.contents>div{
+    height: 200px;
+    width: 390px;
+    /* background-color: seagreen; */
+}
+
+.contents h3{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(255, 246, 234);
+    color: seagreen;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px 10px 0 0 ;
+    margin-left: 10px;
+}
+
+.contents ul, .contents p{
+    width: 100%;
+    height: 165px;
+    border-top: 3px solid rgb(255, 246, 234);
+    background-color: #fff;
+}
+
+.noti{}
+.noti ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.noti ul li{
+    display: flex;
+    justify-content: space-between;
+}
+.noti ul li a{
+    width: 75%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+.noti ul li span{}
+
+
+.gal{}
+.gal ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gal ul li{}
+.gal ul li a{
+    display: block;
+}
+
+.banner{}
+.banner p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner p a{}
+.banner p a img{}
+
+
+
+
+#footer{
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted #ddd;
+}
+
+
+
+.f_logo{}
+.copy{
+    border-left: 1px dotted #7e7e7e;
+    border-right: 1px dotted #7e7e7e;
+    width: 600px;
+    text-align: center;
+    padding: 10px 0;
+}
+.family{}
+.family select{height: 30px;}
+
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000079;
+    position: absolute;
+    left: 0; top: 0;
+    display: none;
+}
+
+
+
+.popup{
+    display: none;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border: 10px solid seagreen;
+}
+
+.popup h3{
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.popup p{
+    text-align: justify;
+    line-height: 1.5;
+}
+.popup button{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: 2px solid seagreen;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.popup button:hover{
+    background-color: seagreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
