@@ -11,17 +11,27 @@ $(function(){
 
     /////이미지 슬라이드
     
-    var n = 0
+    // var n = 0
     
+    // setInterval(function(){
+    //     if(n==2){
+    //         n=0;
+    //     }else{
+    //         n++;
+    //     }       
+    //     console.log(n) 
+    //     $(".left_move").animate({left : n * (-1200) + "px"}, 500)
+    // }, 2500)
+
     setInterval(function(){
-        if(n==2){
-            n=0;
-        }else{
-            n++;
-        }       
-        console.log(n) 
-        $(".left_move").animate({left : n * (-1200) + "px"}, 500)
-    }, 2500)
+        $(".left_move").animate({left : "-1200px"},2500,function(){
+            $(".left_move").append($(".left_move li").first());
+            $(".left_move").css({left : "0"})
+        })
+    })//j
+
+
+
 
 
     ///모달팝업
